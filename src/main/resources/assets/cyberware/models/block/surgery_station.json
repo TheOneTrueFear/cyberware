@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "cyberware:block/surgery_station_top",
+    "side": "cyberware:block/surgery_station_side",
+    "bottom": "cyberware:block/surgery_station_bottom"
+  }
+}

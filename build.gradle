@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '1.0.11'
+}
+version = '1.0.0'
+group = 'dev.cyberware'
+base { archivesName = 'cyberware' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.172'   // any 21.1.x works; bump if Gradle can't find it
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+    mods { cyberware { sourceSet sourceSets.main } }
+}
